@@ -8,8 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol IPConnectionViewDelegate <NSObject>
+
+@required
+-(void)ipAddressOfSlave:(NSString *)addr;
+-(NSString *)ipAddressOfSelf;
+
+@end
+
 @interface IPConnectionView : UIView
 
--(instancetype)initWithFrame:(CGRect)frame isMaster:(BOOL)master;
+@property (nonatomic,assign) BOOL isMaster;
+@property (nonatomic,weak) id<IPConnectionViewDelegate> delegate;
+
+-(void)setUpView;
 
 @end

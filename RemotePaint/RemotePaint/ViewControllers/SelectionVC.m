@@ -7,7 +7,7 @@
 //
 
 #import "SelectionVC.h"
-
+#import "MainVC.h"
 
 @interface SelectionVC ()
 
@@ -17,19 +17,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.title = @"Selection Phase";
 }
 
 
 - (IBAction)masterClicked:(id)sender {
-
+    MainVC *mainVC = [[MainVC alloc] init];
+    mainVC.isMaster = true;
+    [self.navigationController pushViewController:mainVC animated:true];
+    [mainVC startConnecting];
 }
 
 - (IBAction)slaveClicked:(id)sender {
     
-
-    
+    MainVC *mainVC = [[MainVC alloc] init];
+    mainVC.isMaster = false;
+    [self.navigationController pushViewController:mainVC animated:true];
+    [mainVC startConnecting];    
 }
-
 
 @end

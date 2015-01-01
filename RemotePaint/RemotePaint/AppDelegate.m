@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
 #import "SelectionVC.h"
 @interface AppDelegate ()
 
@@ -23,11 +22,11 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    ViewController *vc = [[ViewController alloc] init];
-    
     SelectionVC *selectionVC = [[SelectionVC alloc] initWithNibName:NSStringFromClass([SelectionVC class]) bundle:nil];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:selectionVC];
+    nav.navigationBarHidden = true;
     
-    self.window.rootViewController=selectionVC;
+    self.window.rootViewController=nav;
     [self.window makeKeyAndVisible];
     return YES;
 }

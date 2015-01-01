@@ -19,6 +19,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="evz-V5-lQU"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="Choose as Master">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -31,6 +32,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="50e-Ae-vHy"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="Choose as Slave">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -38,12 +40,24 @@
                         <action selector="slaveClicked:" destination="-1" eventType="touchUpInside" id="aWL-T7-98Y"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Master device is where you draw and it will be displayed in Slave" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8g-fJ-FWq">
+                    <rect key="frame" x="40" y="40" width="520" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="d0d-nK-gQV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="s8g-fJ-FWq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="3Pw-Wo-jtb"/>
                 <constraint firstAttribute="trailing" secondItem="tpm-9z-p3o" secondAttribute="trailing" constant="8" id="7VI-8z-N6w"/>
                 <constraint firstItem="Fl9-dC-zIK" firstAttribute="top" secondItem="tpm-9z-p3o" secondAttribute="bottom" constant="40" id="LXT-bQ-zRv"/>
                 <constraint firstItem="tpm-9z-p3o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="P1i-zg-M3B"/>
+                <constraint firstAttribute="trailing" secondItem="s8g-fJ-FWq" secondAttribute="trailing" constant="40" id="Qzd-Lk-N0H"/>
+                <constraint firstItem="s8g-fJ-FWq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="S1z-ej-GXP"/>
                 <constraint firstAttribute="bottom" secondItem="Fl9-dC-zIK" secondAttribute="bottom" priority="999" constant="310" id="Vu7-Jx-4Jb"/>
                 <constraint firstAttribute="trailing" secondItem="Fl9-dC-zIK" secondAttribute="trailing" constant="8" id="ac2-P0-vks"/>
                 <constraint firstItem="Fl9-dC-zIK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="asZ-il-mNo"/>

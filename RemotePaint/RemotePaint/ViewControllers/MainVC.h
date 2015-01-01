@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainVC.h
 //  RemotePaint
 //
 //  Created by santhosh lakkanpalli on 01/01/15.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MainVC : UIViewController
 
+@property (nonatomic,assign) BOOL isMaster;
+
+-(void)startConnecting;
 
 @end
-

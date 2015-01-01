@@ -16,10 +16,10 @@
     if (self) {
         hue = 0.0;
         [self initContext:frame.size];
-        point0 = CGPointMake(0, 0);
-		point1 = CGPointMake(50, 100);
-		point2 = CGPointMake(100, 50);
-		point3 = CGPointMake(150, 100);
+        point0 = CGPointMake(-1, -1);
+		point1 = CGPointMake(-1, -1);
+		point2 = CGPointMake(-1, -1);
+		point3 = CGPointMake(-1, -1);
         [self drawToCache];
     }
     return self;
