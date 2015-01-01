@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectionVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpm-9z-p3o">
+                    <rect key="frame" x="8" y="170" width="584" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="evz-V5-lQU"/>
+                    </constraints>
+                    <state key="normal" title="Choose as Master">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="masterClicked:" destination="-1" eventType="touchUpInside" id="qia-Kq-sf2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fl9-dC-zIK">
+                    <rect key="frame" x="8" y="250" width="584" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="50e-Ae-vHy"/>
+                    </constraints>
+                    <state key="normal" title="Choose as Slave">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="slaveClicked:" destination="-1" eventType="touchUpInside" id="aWL-T7-98Y"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tpm-9z-p3o" secondAttribute="trailing" constant="8" id="7VI-8z-N6w"/>
+                <constraint firstItem="Fl9-dC-zIK" firstAttribute="top" secondItem="tpm-9z-p3o" secondAttribute="bottom" constant="40" id="LXT-bQ-zRv"/>
+                <constraint firstItem="tpm-9z-p3o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="P1i-zg-M3B"/>
+                <constraint firstAttribute="bottom" secondItem="Fl9-dC-zIK" secondAttribute="bottom" priority="999" constant="310" id="Vu7-Jx-4Jb"/>
+                <constraint firstAttribute="trailing" secondItem="Fl9-dC-zIK" secondAttribute="trailing" constant="8" id="ac2-P0-vks"/>
+                <constraint firstItem="Fl9-dC-zIK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="asZ-il-mNo"/>
+                <constraint firstItem="tpm-9z-p3o" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="170" id="eZ4-V6-OAB"/>
+            </constraints>
+            <point key="canvasLocation" x="596" y="137"/>
+        </view>
+    </objects>
+</document>

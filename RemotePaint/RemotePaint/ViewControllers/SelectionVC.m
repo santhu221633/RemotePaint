@@ -1,21 +1,34 @@
 //
-//  ViewController.m
+//  SelectionVC.m
 //  RemotePaint
 //
 //  Created by santhosh lakkanpalli on 01/01/15.
 //  Copyright (c) 2015 com.santhosh. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SelectionVC.h"
 
-@interface ViewController ()
+
+@interface SelectionVC ()
 
 @end
 
-@implementation ViewController
+@implementation SelectionVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+}
+
+
+- (IBAction)masterClicked:(id)sender {
+
+}
+
+- (IBAction)slaveClicked:(id)sender {
+    
+
+    
 }
 
 

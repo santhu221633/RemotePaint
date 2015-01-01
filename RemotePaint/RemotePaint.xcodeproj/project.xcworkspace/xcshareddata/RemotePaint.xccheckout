@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E6525220-FFB0-4158-9741-49CA1F7FAFB1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RemotePaint</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B2E02941357544A1547A1D84DAC371131C667006</key>
+		<string>https://bitbucket.org/santhu221633/remotepaint.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RemotePaint/RemotePaint.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B2E02941357544A1547A1D84DAC371131C667006</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/santhu221633/remotepaint.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B2E02941357544A1547A1D84DAC371131C667006</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B2E02941357544A1547A1D84DAC371131C667006</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RemotePaint</string>
+		</dict>
+	</array>
+</dict>
+</plist>

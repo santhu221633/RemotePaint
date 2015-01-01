@@ -9,9 +9,17 @@
 /* Begin PBXBuildFile section */
 		CA93E4501A55311D0038B6AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA93E44F1A55311D0038B6AE /* main.m */; };
 		CA93E4531A55311D0038B6AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA93E4521A55311D0038B6AE /* AppDelegate.m */; };
-		CA93E4561A55311D0038B6AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA93E4551A55311D0038B6AE /* ViewController.m */; };
 		CA93E45B1A55311D0038B6AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA93E45A1A55311D0038B6AE /* Images.xcassets */; };
 		CA93E46A1A55311D0038B6AE /* RemotePaintTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA93E4691A55311D0038B6AE /* RemotePaintTests.m */; };
+		CA93E4851A5535820038B6AE /* SelectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA93E4831A5535820038B6AE /* SelectionVC.m */; };
+		CA93E4861A5535820038B6AE /* SelectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA93E4841A5535820038B6AE /* SelectionVC.xib */; };
+		CA93E4891A5535D40038B6AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA93E4881A5535D40038B6AE /* ViewController.m */; };
+		CA93E48C1A5535EB0038B6AE /* PaintView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA93E48B1A5535EB0038B6AE /* PaintView.m */; };
+		CA93E4911A5535FF0038B6AE /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = CA93E48E1A5535FF0038B6AE /* GCDAsyncSocket.m */; };
+		CA93E4921A5535FF0038B6AE /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = CA93E4901A5535FF0038B6AE /* GCDAsyncUdpSocket.m */; };
+		CA93E4941A5536050038B6AE /* HelperFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA93E4931A5536050038B6AE /* HelperFunctions.m */; };
+		CA93E4971A553BC10038B6AE /* IPConnectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA93E4961A553BC10038B6AE /* IPConnectionView.m */; };
+		CA93E49B1A553BFC0038B6AE /* IPConnectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA93E49A1A553BFC0038B6AE /* IPConnectionView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +38,25 @@
 		CA93E44F1A55311D0038B6AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CA93E4511A55311D0038B6AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CA93E4521A55311D0038B6AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CA93E4541A55311D0038B6AE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CA93E4551A55311D0038B6AE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CA93E45A1A55311D0038B6AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CA93E4631A55311D0038B6AE /* RemotePaintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemotePaintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA93E4681A55311D0038B6AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA93E4691A55311D0038B6AE /* RemotePaintTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemotePaintTests.m; sourceTree = "<group>"; };
+		CA93E4821A5535820038B6AE /* SelectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectionVC.h; path = ViewControllers/SelectionVC.h; sourceTree = "<group>"; };
+		CA93E4831A5535820038B6AE /* SelectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectionVC.m; path = ViewControllers/SelectionVC.m; sourceTree = "<group>"; };
+		CA93E4841A5535820038B6AE /* SelectionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SelectionVC.xib; path = ViewControllers/SelectionVC.xib; sourceTree = "<group>"; };
+		CA93E4871A5535D40038B6AE /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ViewControllers/ViewController.h; sourceTree = "<group>"; };
+		CA93E4881A5535D40038B6AE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ViewControllers/ViewController.m; sourceTree = "<group>"; };
+		CA93E48A1A5535EB0038B6AE /* PaintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaintView.h; path = CustomViews/PaintView.h; sourceTree = "<group>"; };
+		CA93E48B1A5535EB0038B6AE /* PaintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaintView.m; path = CustomViews/PaintView.m; sourceTree = "<group>"; };
+		CA93E48D1A5535FF0038B6AE /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = ThirdPartyLibs/GCDSockets/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		CA93E48E1A5535FF0038B6AE /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = ThirdPartyLibs/GCDSockets/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		CA93E48F1A5535FF0038B6AE /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = ThirdPartyLibs/GCDSockets/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		CA93E4901A5535FF0038B6AE /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = ThirdPartyLibs/GCDSockets/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		CA93E4931A5536050038B6AE /* HelperFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HelperFunctions.m; path = ThirdPartyLibs/HelperFunctions.m; sourceTree = "<group>"; };
+		CA93E4951A553BC10038B6AE /* IPConnectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPConnectionView.h; path = CustomViews/IPConnectionView.h; sourceTree = "<group>"; };
+		CA93E4961A553BC10038B6AE /* IPConnectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IPConnectionView.m; path = CustomViews/IPConnectionView.m; sourceTree = "<group>"; };
+		CA93E49A1A553BFC0038B6AE /* IPConnectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IPConnectionView.xib; path = CustomViews/IPConnectionView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +100,10 @@
 			children = (
 				CA93E4511A55311D0038B6AE /* AppDelegate.h */,
 				CA93E4521A55311D0038B6AE /* AppDelegate.m */,
-				CA93E4541A55311D0038B6AE /* ViewController.h */,
-				CA93E4551A55311D0038B6AE /* ViewController.m */,
+				CA93E4801A55352B0038B6AE /* ViewControllers */,
+				CA93E4811A5535360038B6AE /* CustomViews */,
 				CA93E45A1A55311D0038B6AE /* Images.xcassets */,
+				CA93E4791A55321E0038B6AE /* libs */,
 				CA93E44D1A55311D0038B6AE /* Supporting Files */,
 			);
 			path = RemotePaint;
@@ -111,6 +133,50 @@
 				CA93E4681A55311D0038B6AE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA93E4791A55321E0038B6AE /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				CA93E4931A5536050038B6AE /* HelperFunctions.m */,
+				CA93E47F1A5535130038B6AE /* GCDSocket_libs */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		CA93E47F1A5535130038B6AE /* GCDSocket_libs */ = {
+			isa = PBXGroup;
+			children = (
+				CA93E48D1A5535FF0038B6AE /* GCDAsyncSocket.h */,
+				CA93E48E1A5535FF0038B6AE /* GCDAsyncSocket.m */,
+				CA93E48F1A5535FF0038B6AE /* GCDAsyncUdpSocket.h */,
+				CA93E4901A5535FF0038B6AE /* GCDAsyncUdpSocket.m */,
+			);
+			name = GCDSocket_libs;
+			sourceTree = "<group>";
+		};
+		CA93E4801A55352B0038B6AE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA93E4871A5535D40038B6AE /* ViewController.h */,
+				CA93E4881A5535D40038B6AE /* ViewController.m */,
+				CA93E4821A5535820038B6AE /* SelectionVC.h */,
+				CA93E4831A5535820038B6AE /* SelectionVC.m */,
+				CA93E4841A5535820038B6AE /* SelectionVC.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CA93E4811A5535360038B6AE /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				CA93E4951A553BC10038B6AE /* IPConnectionView.h */,
+				CA93E4961A553BC10038B6AE /* IPConnectionView.m */,
+				CA93E49A1A553BFC0038B6AE /* IPConnectionView.xib */,
+				CA93E48A1A5535EB0038B6AE /* PaintView.h */,
+				CA93E48B1A5535EB0038B6AE /* PaintView.m */,
+			);
+			name = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +260,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA93E45B1A55311D0038B6AE /* Images.xcassets in Resources */,
+				CA93E49B1A553BFC0038B6AE /* IPConnectionView.xib in Resources */,
+				CA93E4861A5535820038B6AE /* SelectionVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,9 +279,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA93E4561A55311D0038B6AE /* ViewController.m in Sources */,
+				CA93E4911A5535FF0038B6AE /* GCDAsyncSocket.m in Sources */,
+				CA93E4891A5535D40038B6AE /* ViewController.m in Sources */,
+				CA93E4971A553BC10038B6AE /* IPConnectionView.m in Sources */,
 				CA93E4531A55311D0038B6AE /* AppDelegate.m in Sources */,
+				CA93E48C1A5535EB0038B6AE /* PaintView.m in Sources */,
+				CA93E4921A5535FF0038B6AE /* GCDAsyncUdpSocket.m in Sources */,
+				CA93E4941A5536050038B6AE /* HelperFunctions.m in Sources */,
 				CA93E4501A55311D0038B6AE /* main.m in Sources */,
+				CA93E4851A5535820038B6AE /* SelectionVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

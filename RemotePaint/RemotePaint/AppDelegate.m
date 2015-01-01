@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "SelectionVC.h"
 @interface AppDelegate ()
 
 @end
@@ -23,7 +24,10 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     ViewController *vc = [[ViewController alloc] init];
-    self.window.rootViewController=vc;
+    
+    SelectionVC *selectionVC = [[SelectionVC alloc] initWithNibName:NSStringFromClass([SelectionVC class]) bundle:nil];
+    
+    self.window.rootViewController=selectionVC;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -48,6 +52,9 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+//    TODO:
+    //ADD CODE TO CLOSE THE CONNECTIONS---
+    
 }
 
 @end
